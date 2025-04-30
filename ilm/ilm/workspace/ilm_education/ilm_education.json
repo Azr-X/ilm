@@ -1,0 +1,49 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"3o6npWVJB3\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ILM Education</span>\",\"col\":12}},{\"id\":\"5_L3t-xpyA\",\"type\":\"card\",\"data\":{\"card_name\":\"On Boarding\",\"col\":4}}]",
+ "creation": "2025-05-01 02:13:37.632012",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "education",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "ILM Education",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "On Boarding",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lead",
+   "link_count": 0,
+   "link_to": "ILM Lead",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-05-01 02:37:49.527367",
+ "modified_by": "Administrator",
+ "module": "Ilm",
+ "name": "ILM Education",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [],
+ "title": "ILM Education"
+}

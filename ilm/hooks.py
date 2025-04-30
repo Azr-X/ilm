@@ -5,8 +5,21 @@ app_description = "ILM Education"
 app_email = "azr.shamz@gmail.com"
 app_license = "mit"
 
+
+
 # Apps
 # ------------------
+
+fixtures = [
+    {
+        "doctype": "Workspace",
+        "filters": [
+            ["module", "=", "ILM Education"]
+        ]
+    }
+]
+
+
 
 # required_apps = []
 
