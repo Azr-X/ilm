@@ -12,6 +12,12 @@ app_license = "mit"
 
 fixtures = [
     {
+        "doctype": "Role",
+        "filters": [
+            ["name", "=", "ILM Admin"]
+        ]
+    },
+    {
         "doctype": "Workspace",
         "filters": [
             ["module", "=", "ILM Education"]
