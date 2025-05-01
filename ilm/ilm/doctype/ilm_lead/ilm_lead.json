@@ -44,10 +44,9 @@
   },
   {
    "fieldname": "contact_no",
-   "fieldtype": "Data",
+   "fieldtype": "Phone",
    "in_list_view": 1,
-   "label": "Contact No.",
-   "reqd": 1
+   "label": "Contact No."
   },
   {
    "fieldname": "admin_details_section",
@@ -58,7 +57,7 @@
    "fieldname": "lead_status",
    "fieldtype": "Select",
    "label": "Lead Status",
-   "options": "Lead\nAssessment Review\nInvoiced\nAwaiting Payment\nHold\nLost\nWin"
+   "options": "Lead\nProposal Shared\nAssessment Review\nInvoiced\nAwaiting Payment\nHold\nLost\nWin"
   },
   {
    "fieldname": "fee_communicated",
@@ -126,7 +125,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-01 02:32:30.501211",
+ "modified": "2025-05-01 03:04:00.594471",
  "modified_by": "Administrator",
  "module": "Ilm",
  "name": "ILM Lead",
