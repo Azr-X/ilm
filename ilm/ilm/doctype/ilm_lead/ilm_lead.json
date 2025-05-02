@@ -1,6 +1,7 @@
 {
  "actions": [],
- "autoname": "autoincrement",
+ "allow_rename": 1,
+ "autoname": "format: LEAD-{name1}-{MM}-{YY}",
  "creation": "2025-05-01 01:34:02.646064",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -141,11 +142,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-02 11:20:18.177805",
+ "modified": "2025-05-02 16:19:02.000335",
  "modified_by": "Administrator",
  "module": "Ilm",
  "name": "ILM Lead",
- "naming_rule": "Autoincrement",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
