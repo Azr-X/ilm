@@ -1,7 +1,6 @@
 {
  "actions": [],
- "allow_rename": 1,
- "autoname": "field:name1",
+ "autoname": "autoincrement",
  "creation": "2025-05-01 01:34:02.646064",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -13,6 +12,7 @@
   "column_break_vypl",
   "organization",
   "country",
+  "batch",
   "admin_details_section",
   "lead_status",
   "first_communication",
@@ -22,6 +22,7 @@
   "column_break_txwj",
   "handled_by",
   "fee_communicated",
+  "currency",
   "remarks"
  ],
  "fields": [
@@ -45,7 +46,6 @@
   {
    "fieldname": "contact_no",
    "fieldtype": "Phone",
-   "in_list_view": 1,
    "label": "Contact No."
   },
   {
@@ -56,13 +56,15 @@
   {
    "fieldname": "lead_status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Lead Status",
    "options": "Lead\nProposal Shared\nAssessment Review\nInvoiced\nAwaiting Payment\nHold\nLost\nWin"
   },
   {
    "fieldname": "fee_communicated",
-   "fieldtype": "Data",
-   "label": "Fee Communicated"
+   "fieldtype": "Currency",
+   "label": "Fee Communicated",
+   "reqd": 1
   },
   {
    "default": "0",
@@ -101,6 +103,7 @@
   {
    "fieldname": "handled_by",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Handled By",
    "options": "User",
    "reqd": 1
@@ -120,16 +123,29 @@
    "fieldname": "email_id",
    "fieldtype": "Data",
    "label": "Email ID"
+  },
+  {
+   "fieldname": "batch",
+   "fieldtype": "Link",
+   "label": "Batch",
+   "options": "ILM Batches"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-01 03:04:00.594471",
+ "modified": "2025-05-02 11:20:18.177805",
  "modified_by": "Administrator",
  "module": "Ilm",
  "name": "ILM Lead",
- "naming_rule": "By fieldname",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {
