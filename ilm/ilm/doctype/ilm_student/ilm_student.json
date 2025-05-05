@@ -1,25 +1,182 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:lead",
  "creation": "2025-05-02 11:54:31.502031",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_hnj7"
+  "admin_section",
+  "lead",
+  "assessment_completed",
+  "column_break_dtyo",
+  "amended_from",
+  "assessment_remarks",
+  "basic_details_section",
+  "name1",
+  "batch",
+  "column_break_aagd",
+  "contact",
+  "email",
+  "address_section",
+  "country",
+  "city",
+  "postal",
+  "column_break_xmcu",
+  "address",
+  "section_break_qdyi",
+  "student_qualification",
+  "documents_section",
+  "documents"
  ],
  "fields": [
   {
-   "fieldname": "section_break_hnj7",
-   "fieldtype": "Section Break"
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fetch_from": "lead.name1",
+   "fetch_if_empty": 1,
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "admin_section",
+   "fieldtype": "Section Break",
+   "label": "Admin"
+  },
+  {
+   "fieldname": "lead",
+   "fieldtype": "Link",
+   "label": "Lead",
+   "options": "ILM Lead",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_aagd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "documents_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Documents"
+  },
+  {
+   "fetch_from": "lead.batch",
+   "fetch_if_empty": 1,
+   "fieldname": "batch",
+   "fieldtype": "Link",
+   "label": "Batch",
+   "options": "ILM Batches"
+  },
+  {
+   "fetch_from": "lead.contact_no",
+   "fetch_if_empty": 1,
+   "fieldname": "contact",
+   "fieldtype": "Phone",
+   "label": "Contact"
+  },
+  {
+   "fetch_from": "lead.email_id",
+   "fetch_if_empty": 1,
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "postal",
+   "fieldtype": "Data",
+   "label": "Postal"
+  },
+  {
+   "fieldname": "column_break_xmcu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_dtyo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assessment_remarks",
+   "fieldtype": "Small Text",
+   "label": "Assessment Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "ILM Student",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "documents",
+   "fieldtype": "Table",
+   "options": "ILM Student Documents"
+  },
+  {
+   "fieldname": "section_break_qdyi",
+   "fieldtype": "Section Break",
+   "label": "Student Qualification"
+  },
+  {
+   "description": "Click the <i class=\"fa fa-edit\"></i> icon on the right to expand and add more details.\n",
+   "fieldname": "student_qualification",
+   "fieldtype": "Table",
+   "options": "ILM Student Qualification"
+  },
+  {
+   "default": "0",
+   "fieldname": "assessment_completed",
+   "fieldtype": "Check",
+   "label": "Assessment Completed"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-05-02 11:54:31.502031",
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Customer",
+   "link_fieldname": "custom_ilm_student"
+  },
+  {
+   "link_doctype": "Sales Invoice",
+   "link_fieldname": "custom_ilm_student"
+  }
+ ],
+ "modified": "2025-05-05 18:17:05.853781",
  "modified_by": "Administrator",
  "module": "Ilm",
  "name": "ILM Student",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -33,10 +190,24 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ILM Admin",
+   "share": 1,
+   "write": 1
   }
  ],
  "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
 }

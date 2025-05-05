@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-05 12:28:06.796389",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "qualification_level",
+  "degree__program_name",
+  "board__university__institution",
+  "country",
+  "column_break_fopz",
+  "year_of_passing",
+  "grade__marks",
+  "document_attachment",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "qualification_level",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Qualification Level",
+   "options": "Undergraduate\nGraduate\nPostgraduate\nDiploma\nPhD\nOther",
+   "reqd": 1
+  },
+  {
+   "description": "eg. Bcom, Bba, B.Sc, MBA etc",
+   "fieldname": "degree__program_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Degree / Program Name"
+  },
+  {
+   "fieldname": "board__university__institution",
+   "fieldtype": "Data",
+   "label": "Board / University / Institution"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "year_of_passing",
+   "fieldtype": "Data",
+   "label": "Year of Passing"
+  },
+  {
+   "fieldname": "grade__marks",
+   "fieldtype": "Data",
+   "label": "Grade / Marks"
+  },
+  {
+   "fieldname": "document_attachment",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Document Attachment"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_fopz",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-05-05 13:04:31.255548",
+ "modified_by": "Administrator",
+ "module": "Ilm",
+ "name": "ILM Student Qualification",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

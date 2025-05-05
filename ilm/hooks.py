@@ -22,6 +22,12 @@ fixtures = [
         "filters": [
             ["module", "=", "ILM Education"]
         ]
+    },
+    {
+        "doctype": "Workflow",
+        "filters": [
+            ["name", "=", "Student Workflow"]
+        ]
     }
 ]
 

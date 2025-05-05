@@ -92,7 +92,7 @@
    "depends_on": "eval:doc.source==\"Direct\"",
    "fieldname": "user",
    "fieldtype": "Link",
-   "label": "User",
+   "label": "Source User",
    "options": "User"
   },
   {
@@ -123,7 +123,8 @@
   {
    "fieldname": "email_id",
    "fieldtype": "Data",
-   "label": "Email ID"
+   "label": "Email ID",
+   "unique": 1
   },
   {
    "fieldname": "batch",
@@ -141,8 +142,13 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-05-02 16:19:02.000335",
+ "links": [
+  {
+   "link_doctype": "ILM Student",
+   "link_fieldname": "lead"
+  }
+ ],
+ "modified": "2025-05-05 17:30:33.608353",
  "modified_by": "Administrator",
  "module": "Ilm",
  "name": "ILM Lead",
