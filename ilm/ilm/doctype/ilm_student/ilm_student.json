@@ -9,6 +9,7 @@
   "admin_section",
   "lead",
   "assessment_completed",
+  "linked_customer",
   "column_break_dtyo",
   "amended_from",
   "assessment_remarks",
@@ -157,6 +158,13 @@
    "fieldname": "assessment_completed",
    "fieldtype": "Check",
    "label": "Assessment Completed"
+  },
+  {
+   "fieldname": "linked_customer",
+   "fieldtype": "Link",
+   "label": "Linked Customer",
+   "options": "Customer",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
@@ -172,7 +180,7 @@
    "link_fieldname": "custom_ilm_student"
   }
  ],
- "modified": "2025-05-05 18:17:05.853781",
+ "modified": "2025-05-06 00:07:35.010447",
  "modified_by": "Administrator",
  "module": "Ilm",
  "name": "ILM Student",

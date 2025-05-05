@@ -1,29 +1,32 @@
 // Copyright (c) 2025, Ashar Shamsudheen and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("ILM Student", {
-// 	refresh(frm) {
-
-// 	},
-// });
-
-
 frappe.ui.form.on('ILM Student', {
     refresh: function(frm) {
-        if (frm.doc.contact && frappe.user.has_role('ILM Admin')) {
-            frm.add_custom_button('WhatsApp Chat', () => {
-                // Clean and format the number
-                let number = frm.doc.contact.replace(/[^0-9]/g, '');
+        if (frappe.user.has_role('ILM Admin')) {
+            // WhatsApp Chat button
+            if (frm.doc.contact) {
+                frm.add_custom_button('WhatsApp Chat', () => {
+                    let number = frm.doc.contact.replace(/\D/g, '');
 
-                if (!number || number.length < 10) {
-                    frappe.msgprint(__('Invalid contact number'));
-                    return;
-                }
+                    // Basic length validation (customize as per your region)
+                    if (number.length < 10 || number.length > 15) {
+                        frappe.msgprint(__('Invalid contact number'));
+                        return;
+                    }
 
-                const message = encodeURIComponent('Hello'); // Customize if needed
-                const url = `https://wa.me/${number}?text=${message}`;
+                    const message = encodeURIComponent('Hello');
+                    const wa_url = `https://wa.me/${number}?text=${message}`;
+                    window.open(wa_url, '_blank');
+                });
+            }
 
-                window.open(url, '_blank');
+            // Create Sales Invoice button
+            frm.add_custom_button('Create Sales Invoice', () => {
+                frappe.new_doc('Sales Invoice', {
+                    customer: frm.doc.name,
+                    custom_ilm_student: frm.doc.name
+                });
             });
         }
     }
@@ -31,8 +34,7 @@ frappe.ui.form.on('ILM Student', {
 
 frappe.ui.form.on('ILM Student Qualification', {
     degree__program_name: function(frm, cdt, cdn) {
-        // Automatically save parent 'Student' form when qualification_level is changed
-        //change document_attachment to mandatory for this row
+        // Auto-save parent form
         frm.save();
     }
 });
