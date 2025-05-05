@@ -28,6 +28,12 @@ fixtures = [
         "filters": [
             ["name", "=", "Student Workflow"]
         ]
+    },
+    {
+        "doctype": "Workflow State"
+    },
+    {
+        "doctype": "Workflow Action Master"
     }
 ]
 

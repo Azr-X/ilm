@@ -1,0 +1,101 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "question-sign",
+  "modified": "2025-05-01 03:09:20.987739",
+  "name": "Pending",
+  "style": "",
+  "workflow_state_name": "Pending"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "ok-sign",
+  "modified": "2025-05-01 03:09:20.989413",
+  "name": "Approved",
+  "style": "Success",
+  "workflow_state_name": "Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "remove",
+  "modified": "2025-05-01 03:09:20.990838",
+  "name": "Rejected",
+  "style": "Danger",
+  "workflow_state_name": "Rejected"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-05-05 00:07:28.791232",
+  "name": "Consultation Recommended",
+  "style": "",
+  "workflow_state_name": "Consultation Recommended"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-05-05 00:25:18.186956",
+  "name": "Assessment Communicated",
+  "style": "",
+  "workflow_state_name": "Assessment Communicated"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-05-05 00:08:34.730985",
+  "name": "Registered",
+  "style": "",
+  "workflow_state_name": "Registered"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-05-04 19:25:48.373456",
+  "name": "Onboarding",
+  "style": "",
+  "workflow_state_name": "Onboarding"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-05-05 00:06:56.012478",
+  "name": "Assessment Pending",
+  "style": "",
+  "workflow_state_name": "Assessment Pending"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-05-05 00:08:12.594090",
+  "name": "Pending Registration",
+  "style": "",
+  "workflow_state_name": "Pending Registration"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-05-05 00:17:32.579428",
+  "name": "Consultation Fee Pending",
+  "style": "",
+  "workflow_state_name": "Consultation Fee Pending"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-05-05 00:05:48.513687",
+  "name": "Enrollment Fee Pending",
+  "style": "",
+  "workflow_state_name": "Enrollment Fee Pending"
+ }
+]
