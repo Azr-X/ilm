@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"3o6npWVJB3\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ILM Education</span>\",\"col\":12}},{\"id\":\"5_L3t-xpyA\",\"type\":\"card\",\"data\":{\"card_name\":\"On Boarding\",\"col\":4}}]",
+ "content": "[{\"id\":\"3o6npWVJB3\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ILM Education</span>\",\"col\":12}},{\"id\":\"5_L3t-xpyA\",\"type\":\"card\",\"data\":{\"card_name\":\"On Boarding\",\"col\":4}},{\"id\":\"k8sPv8Me-A\",\"type\":\"card\",\"data\":{\"card_name\":\"Admin\",\"col\":4}},{\"id\":\"x07DSS2cAf\",\"type\":\"paragraph\",\"data\":{\"text\":\"Admin\",\"col\":12}}]",
  "creation": "2025-05-01 02:13:37.632012",
  "custom_blocks": [],
  "docstatus": 0,
@@ -17,7 +17,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "On Boarding",
-   "link_count": 1,
+   "link_count": 2,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -31,9 +31,48 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Student",
+   "link_count": 0,
+   "link_to": "ILM Student",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Admin",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "ILM Expenses",
+   "link_count": 0,
+   "link_to": "ILM Expenses",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "ILM Batches",
+   "link_count": 0,
+   "link_to": "ILM Batches",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-05-01 02:37:49.527367",
+ "modified": "2025-05-06 09:37:07.558708",
  "modified_by": "Administrator",
  "module": "Ilm",
  "name": "ILM Education",

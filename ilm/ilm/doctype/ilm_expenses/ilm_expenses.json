@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:Expense-{MM}-{YY}-Met by-{met_by}",
  "creation": "2025-05-04 17:32:32.105328",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -83,10 +84,11 @@
    "link_fieldname": "custom_ilm_expense"
   }
  ],
- "modified": "2025-05-04 17:48:52.073339",
+ "modified": "2025-05-06 08:56:48.301113",
  "modified_by": "Administrator",
  "module": "Ilm",
  "name": "ILM Expenses",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
